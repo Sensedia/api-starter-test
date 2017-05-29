@@ -1,0 +1,13 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "v1",
+    "title" : "Swagger spec for Carrier API",
+    "contact" : {
+      "url" : "http://www.sensedia.com.br"
+    }
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/v1",
+  "schemes" : [ "http", "https" ]
+}
