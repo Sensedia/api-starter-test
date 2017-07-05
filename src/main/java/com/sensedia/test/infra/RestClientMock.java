@@ -8,7 +8,7 @@ import com.sensedia.api.infra.RestClient.PagedOperation;
 import com.sensedia.api.infra.RestClient.ResponseHandler;
 
 public class RestClientMock {
-	public <T> PagedOperation<T> pagedOperation(ResponseEntity<T> response) {
+	public static <T> PagedOperation<T> pagedOperation(ResponseEntity<T> response) {
 		return new PagedOperationMock<>(response);
 	}
 
