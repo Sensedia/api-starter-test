@@ -2,6 +2,7 @@ package com.sensedia.test.infra;
 
 import java.util.HashMap;
 
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 
 import com.sensedia.api.infra.RestClient.GetOperation;
@@ -23,7 +24,7 @@ public class RestClientMock {
 		private ResponseEntity<R> response;
 
 		public GetOperationMock(ResponseEntity<R> response) {
-			super("mock://test", new HashMap<>());
+			super("mock://test", new HttpHeaders(), new HashMap<>());
 			this.response = response;
 		}
 
@@ -37,7 +38,7 @@ public class RestClientMock {
 		private ResponseEntity<R> response;
 
 		public PagedOperationMock(ResponseEntity<R> response) {
-			super("mock://test", Limit.of(1), Offset.of(1));
+			super("mock://test", new HttpHeaders(), Limit.of(1), Offset.of(1));
 			this.response = response;
 		}
 
