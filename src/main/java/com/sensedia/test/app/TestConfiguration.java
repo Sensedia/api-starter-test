@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.flyway.FlywayMigrationStrategy;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.sensedia.api.app.TestEnvironment;
+
 @Configuration
 public class TestConfiguration {
 	@Bean

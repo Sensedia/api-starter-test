@@ -9,7 +9,7 @@ import com.sensedia.api.infra.RestClient.GetOperation;
 import com.sensedia.api.infra.RestClient.Limit;
 import com.sensedia.api.infra.RestClient.Offset;
 import com.sensedia.api.infra.RestClient.PagedOperation;
-import com.sensedia.api.infra.RestClient.ResponseHandler;
+import com.sensedia.api.infra.RestClient.ResponseEntityHandler;
 
 public class RestClientMock {
 	public static <T> GetOperation<T> getOperation(ResponseEntity<T> response) {
@@ -29,7 +29,7 @@ public class RestClientMock {
 		}
 
 		@Override
-		public void onResponse(ResponseHandler<R> handler, Class<R> type) {
+		public void onResponse(ResponseEntityHandler<R> handler, Class<R> type) {
 			handler.onResponse(this.response);
 		}
 	}
@@ -43,7 +43,7 @@ public class RestClientMock {
 		}
 
 		@Override
-		public void onResponse(ResponseHandler<R> handler, Class<R> type) {
+		public void onResponse(ResponseEntityHandler<R> handler, Class<R> type) {
 			handler.onResponse(this.response);
 		}
 	}
