@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import io.restassured.RestAssured;
 
 @SpringBootTest(webEnvironment=WebEnvironment.RANDOM_PORT)
-public abstract class RestIntegrationTest extends IntegrationTest {
+public abstract class RestIntegrationTest extends SimpleIntegrationTest {
 	@LocalServerPort
 	private int port;
 	
