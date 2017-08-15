@@ -7,5 +7,5 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.AutoConfigureTestEnti
 @AutoConfigureDataJpa
 @AutoConfigureTestDatabase
 @AutoConfigureTestEntityManager
-public abstract class IntegrationTestApplication extends SimpleIntegrationTestApplication{
+public abstract class IntegrationTest extends SimpleIntegrationTest{
 }
